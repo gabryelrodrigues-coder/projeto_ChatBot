@@ -55,9 +55,7 @@ Visitar Site Oficial
 <header>
 
 <div class="logo">
-
 <img src="logo.png" alt="Logo Núcleo Batuíra">
-
 </div>
 
 <nav>
@@ -136,7 +134,37 @@ Acessar site oficial
 
 </footer>
 
+
+<!-- CHATBOT -->
+
+<div class="chatbot-icon" onclick="abrirChat()">
+💬
+</div>
+
+<div class="chatbot" id="chatbot">
+
+<div class="chat-header">
+Chat ONG
+<span onclick="fecharChat()">X</span>
+</div>
+
+<div class="chat-body" id="chat-body">
+<div class="bot">Olá! Como posso ajudar?</div>
+</div>
+
+<input type="text" id="userInput" placeholder="Digite sua mensagem...">
+
+<button onclick="enviarMensagem()">
+Enviar
+</button>
+
+</div>
+
+
+<!-- SCRIPTS -->
+
 <script src="doacao.js"></script>
+<script src="chatbot.js"></script>
 
 </body>
 </html>

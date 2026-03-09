@@ -6,7 +6,6 @@ background:#f4f4f4;
 
 }
 
-
 .top-bar{
 
 background:#39a9b9;
@@ -20,7 +19,6 @@ padding:10px 40px;
 
 }
 
-
 .social a{
 
 color:white;
@@ -28,7 +26,6 @@ margin:10px;
 font-size:20px;
 
 }
-
 
 .site-btn{
 
@@ -39,7 +36,6 @@ color:black;
 border-radius:5px;
 
 }
-
 
 header{
 
@@ -52,13 +48,11 @@ background:white;
 
 }
 
-
 .logo img{
 
 width:120px;
 
 }
-
 
 nav a{
 
@@ -67,7 +61,6 @@ text-decoration:none;
 color:#333;
 
 }
-
 
 .doacao{
 
@@ -86,14 +79,12 @@ text-align:center;
 
 }
 
-
 form{
 
 display:flex;
 flex-direction:column;
 
 }
-
 
 input,select{
 
@@ -104,7 +95,6 @@ border:1px solid #ccc;
 border-radius:5px;
 
 }
-
 
 button{
 
@@ -122,13 +112,11 @@ cursor:pointer;
 
 }
 
-
 button:hover{
 
 background:#2c8d9a;
 
 }
-
 
 .whatsapp{
 
@@ -146,8 +134,9 @@ border-radius:50px;
 
 text-decoration:none;
 
-}
+font-weight:bold;
 
+}
 
 footer{
 
@@ -159,5 +148,141 @@ text-align:center;
 padding:20px;
 
 margin-top:40px;
+
+}
+
+/* CHATBOT */
+
+.chatbot-icon{
+
+position:fixed;
+
+bottom:90px;
+right:20px;
+
+background:#39a9b9;
+color:white;
+
+font-size:30px;
+
+padding:15px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+.chatbot{
+
+position:fixed;
+
+bottom:150px;
+right:20px;
+
+width:300px;
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+display:none;
+
+flex-direction:column;
+
+}
+
+.chat-header{
+
+background:#39a9b9;
+color:white;
+
+padding:10px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+border-radius:10px 10px 0 0;
+
+}
+
+.chat-body{
+
+height:200px;
+
+overflow-y:auto;
+
+padding:10px;
+
+font-size:14px;
+
+}
+
+.bot{
+
+background:#eeeeee;
+
+padding:8px;
+
+margin:5px 0;
+
+border-radius:5px;
+
+max-width:80%;
+
+}
+
+.user{
+
+background:#39a9b9;
+
+color:white;
+
+padding:8px;
+
+margin:5px 0;
+
+border-radius:5px;
+
+text-align:right;
+
+margin-left:auto;
+
+max-width:80%;
+
+}
+
+.chatbot input{
+
+border:none;
+
+border-top:1px solid #ccc;
+
+padding:10px;
+
+width:70%;
+
+outline:none;
+
+}
+
+.chatbot button{
+
+border:none;
+
+background:#39a9b9;
+
+color:white;
+
+width:30%;
+
+cursor:pointer;
 
 }
