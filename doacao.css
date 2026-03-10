@@ -1,13 +1,12 @@
 body{
-
-font-family: Arial;
+font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#f4f4f4;
-
 }
 
-.top-bar{
+/* BARRA SUPERIOR */
 
+.top-bar{
 background:#39a9b9;
 color:white;
 
@@ -16,51 +15,52 @@ justify-content:space-between;
 align-items:center;
 
 padding:10px 40px;
-
+flex-wrap:wrap;
 }
 
 .social a{
-
 color:white;
 margin:10px;
 font-size:20px;
-
 }
 
 .site-btn{
-
 background:#ffd500;
 padding:8px 12px;
 text-decoration:none;
 color:black;
 border-radius:5px;
-
+font-weight:bold;
 }
 
-header{
+/* HEADER */
 
+header{
 display:flex;
 justify-content:space-between;
 align-items:center;
 
 padding:20px 40px;
 background:white;
-
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo img{
-
 width:120px;
-
 }
 
 nav a{
-
 margin:10px;
 text-decoration:none;
 color:#333;
-
+font-weight:bold;
 }
+
+nav a:hover{
+color:#39a9b9;
+}
+
+/* SEÇÃO DOAÇÃO */
 
 .doacao{
 
@@ -80,10 +80,8 @@ text-align:center;
 }
 
 form{
-
 display:flex;
 flex-direction:column;
-
 }
 
 input,select{
@@ -93,6 +91,8 @@ padding:10px;
 
 border:1px solid #ccc;
 border-radius:5px;
+
+font-size:15px;
 
 }
 
@@ -109,14 +109,15 @@ border:none;
 border-radius:5px;
 
 cursor:pointer;
+font-size:16px;
 
 }
 
 button:hover{
-
 background:#2c8d9a;
-
 }
+
+/* BOTÃO WHATSAPP */
 
 .whatsapp{
 
@@ -128,7 +129,7 @@ right:20px;
 background:#25D366;
 color:white;
 
-padding:15px;
+padding:15px 20px;
 
 border-radius:50px;
 
@@ -136,7 +137,13 @@ text-decoration:none;
 
 font-weight:bold;
 
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+z-index:9998;
+
 }
+
+/* RODAPÉ */
 
 footer{
 
@@ -151,7 +158,9 @@ margin-top:40px;
 
 }
 
+/* ======================= */
 /* CHATBOT */
+/* ======================= */
 
 .chatbot-icon{
 
@@ -163,15 +172,22 @@ right:20px;
 background:#39a9b9;
 color:white;
 
-font-size:30px;
+font-size:28px;
 
-padding:15px;
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
 
 border-radius:50%;
 
 cursor:pointer;
 
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+z-index:9999;
 
 }
 
@@ -179,20 +195,23 @@ box-shadow:0 0 10px rgba(0,0,0,0.2);
 
 position:fixed;
 
-bottom:150px;
+bottom:160px;
 right:20px;
 
-width:300px;
+width:320px;
 
 background:white;
 
-border-radius:10px;
+border-radius:12px;
 
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
 
 display:none;
-
 flex-direction:column;
+
+overflow:hidden;
+
+z-index:9999;
 
 }
 
@@ -201,21 +220,20 @@ flex-direction:column;
 background:#39a9b9;
 color:white;
 
-padding:10px;
+padding:12px;
 
 display:flex;
 
 justify-content:space-between;
-
 align-items:center;
 
-border-radius:10px 10px 0 0;
+font-weight:bold;
 
 }
 
 .chat-body{
 
-height:200px;
+height:220px;
 
 overflow-y:auto;
 
@@ -223,21 +241,27 @@ padding:10px;
 
 font-size:14px;
 
+background:#fafafa;
+
 }
+
+/* MENSAGENS BOT */
 
 .bot{
 
 background:#eeeeee;
 
-padding:8px;
+padding:8px 12px;
 
 margin:5px 0;
 
-border-radius:5px;
+border-radius:8px;
 
 max-width:80%;
 
 }
+
+/* MENSAGENS USUÁRIO */
 
 .user{
 
@@ -245,11 +269,11 @@ background:#39a9b9;
 
 color:white;
 
-padding:8px;
+padding:8px 12px;
 
 margin:5px 0;
 
-border-radius:5px;
+border-radius:8px;
 
 text-align:right;
 
@@ -259,13 +283,15 @@ max-width:80%;
 
 }
 
+/* ÁREA DE DIGITAÇÃO */
+
 .chatbot input{
 
 border:none;
 
 border-top:1px solid #ccc;
 
-padding:10px;
+padding:12px;
 
 width:70%;
 

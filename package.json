@@ -1,0 +1,25 @@
+{
+  "name": "chatbot_ong",
+  "version": "1.0.0",
+  "main": "chatbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabryelrodrigues-coder/projeto_ChatBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabryelrodrigues-coder/projeto_ChatBot/issues"
+  },
+  "homepage": "https://github.com/gabryelrodrigues-coder/projeto_ChatBot#readme",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^24.38.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.6"
+  }
+}
